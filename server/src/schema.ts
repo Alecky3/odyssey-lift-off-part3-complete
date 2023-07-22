@@ -22,7 +22,7 @@ export const typeDefs = gql`
     "The tracks description"
     description: String
     "The number of time a track has been viewed"
-    numbreOfViews: Int
+    numberOfViews: Int
   }
 
   "Author of a complete Track"
