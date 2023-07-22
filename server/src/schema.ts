@@ -19,6 +19,10 @@ export const typeDefs = gql`
     length: Int
     "The number of modules this track contains"
     modulesCount: Int
+    "The tracks description"
+    description: String
+    "The number of time a track has been viewed"
+    numbreOfViews: Int
   }
 
   "Author of a complete Track"
@@ -28,5 +32,14 @@ export const typeDefs = gql`
     name: String!
     "Author's profile picture url"
     photo: String
+  }
+
+  "A module is a single unit of teaching. Multiple modules compose a Track"
+  type Module {
+    id: ID!
+    "The Module's title"
+    title: String!
+    "The Modules length in minutes"
+    length: Int
   }
 `;
